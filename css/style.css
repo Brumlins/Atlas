@@ -1,0 +1,58 @@
+h1 {
+    margin: 20px;
+    background-color: #e9ecef;
+    border-radius: 15px;
+}
+
+body {
+    background-color: rgb(177, 169, 169);
+}
+
+.card {
+    background-color: #e9ecef;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background-color: #c8d6e5;
+}
+
+.navbar {
+    color: #343a40;
+    margin-left: 34.5%;
+}
+
+.navbar-brand {
+    font-size: 28px;
+}
+
+.nav-link {
+    font-weight: bold;
+    color: #343a40;
+}
+
+.navbar-toggler {
+    border-color: #343a40;
+}
+
+.navbar-toggler-icon {
+    background-color: #343a40;
+}
+
+.photo {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.photo:hover {
+    transform: scale(1.1);
+}
