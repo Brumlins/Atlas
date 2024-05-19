@@ -1,0 +1,45 @@
+main {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.map-container {
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+}
+
+#world-map {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 2;
+}
+
+#area-europe:hover ~ #europe,
+#area-asia:hover ~ #asia,
+#area-america:hover ~ #america,
+#area-africa:hover ~ #africa,
+#area-australia:hover ~ #australia {
+    opacity: 1;
+}
+
+.area:hover {
+    cursor: pointer;
+}
