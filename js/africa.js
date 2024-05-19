@@ -13,15 +13,12 @@ fetch('https://restcountries.com/v3.1/region/africa')
                                 <img src="${africa.flags.png}" alt="${africa.name.official}" class="card-img-top photo">
                             </a>
                             <h3 class="card-title mt-3">${africa.name.common}</h3>
-                            <h5 class="card-subtitle mb-2 text-muted">${africa.subregion}</h5>
                         </div>
                         <p class="card-text mt-3">
-                            <b>Capital city:</b> ${africa.capital}
+                        <b>Capital city:</b> ${africa.capital}
                         <br><b>Population:</b> ${africa.population}
                         <br><b>Area:</b> ${africa.area} km<sup>2</sup>
-                        <br><b>Czech:</b> ${africa.translations.ces.official}
-                        <br><b>Status:</b> ${africa.status}
-                        <br><b>Start of week:</b> ${africa.startOfWeek}
+                        <br><b>Time zone: </b> ${africa.timezones}
                         </p>
                     </div>
                 </div>

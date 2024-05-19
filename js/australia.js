@@ -13,15 +13,12 @@ fetch('https://restcountries.com/v3.1/region/oceania')
                                 <img src="${australia.flags.png}" alt="${australia.name.official}" class="card-img-top photo">
                             </a>
                             <h3 class="card-title mt-3">${australia.name.common}</h3>
-                            <h5 class="card-subtitle mb-2 text-muted">${australia.subregion}</h5>
                         </div>
                         <p class="card-text mt-3">
                             <b>Capital city:</b> ${australia.capital}
                         <br><b>Population:</b> ${australia.population}
                         <br><b>Area:</b> ${australia.area} km<sup>2</sup>
-                        <br><b>Czech:</b> ${australia.translations.ces.official}
-                        <br><b>Status:</b> ${australia.status}
-                        <br><b>Start of week:</b> ${australia.startOfWeek}
+                        <br><b>Time zone: </b> ${australia.timezones}
                         </p>
                     </div>
                 </div>

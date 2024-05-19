@@ -13,15 +13,12 @@ fetch('https://restcountries.com/v3.1/region/america')
                                 <img src="${america.flags.png}" alt="${america.name.official}" class="card-img-top photo">
                             </a>
                             <h3 class="card-title mt-3">${america.name.common}</h3>
-                            <h5 class="card-subtitle mb-2 text-muted">${america.subregion}</h5>
                         </div>
                         <p class="card-text mt-3">
                             <b>Capital city:</b> ${america.capital}
                         <br><b>Population:</b> ${america.population}
                         <br><b>Area:</b> ${america.area} km<sup>2</sup>
-                        <br><b>Czech:</b> ${america.translations.ces.official}
-                        <br><b>Status:</b> ${america.status}
-                        <br><b>Start of week:</b> ${america.startOfWeek}
+                        <br><b>Time zone: </b> ${america.timezones}
                         </p>
                     </div>
                 </div>

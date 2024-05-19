@@ -13,15 +13,12 @@ fetch('https://restcountries.com/v3.1/region/asia')
                                 <img src="${asia.flags.png}" alt="${asia.name.official}" class="card-img-top photo">
                             </a>
                             <h3 class="card-title mt-3">${asia.name.common}</h3>
-                            <h5 class="card-subtitle mb-2 text-muted">${asia.subregion}</h5>
                         </div>
                         <p class="card-text mt-3">
                             <b>Capital city:</b> ${asia.capital}
                         <br><b>Population:</b> ${asia.population}
                         <br><b>Area:</b> ${asia.area} km<sup>2</sup>
-                        <br><b>Czech:</b> ${asia.translations.ces.official}
-                        <br><b>Status:</b> ${asia.status}
-                        <br><b>Start of week:</b> ${asia.startOfWeek}
+                        <br><b>Time zone: </b> ${asia.timezones}
                         </p>
                     </div>
                 </div>
