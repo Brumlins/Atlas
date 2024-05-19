@@ -56,3 +56,7 @@ body {
 .photo:hover {
     transform: scale(1.1);
 }
+
+h2 {
+    text-align: center;
+}
