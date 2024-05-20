@@ -1,22 +1,22 @@
-document.querySelectorAll('area').forEach(area => {
-    area.addEventListener('click', function(event) {
-        event.preventDefault();
-        window.location.href = this.href;
-    });
+document.addEventListener("DOMContentLoaded", function() {
+    const worldMap = document.getElementById('world-map');
+    const areas = document.querySelectorAll('area');
 
-    area.addEventListener('mouseover', function() {
-        const continentId = this.alt.toLowerCase();
-        const continentImage = document.getElementById(continentId);
-        if (continentImage) {
-            continentImage.style.opacity = '1';
-        }
-    });
+    const areaImages = {
+        'area-europe': 'img/europe.jpg',
+        'area-asia': 'img/asia.jpg',
+        'area-america': 'img/america.jpg',
+        'area-africa': 'img/africa.jpg',
+        'area-australia': 'img/australia.jpg'
+    };
 
-    area.addEventListener('mouseout', function() {
-        const continentId = this.alt.toLowerCase();
-        const continentImage = document.getElementById(continentId);
-        if (continentImage) {
-            continentImage.style.opacity = '0';
-        }
+    areas.forEach(area => {
+        area.addEventListener('mouseenter', () => {
+            worldMap.src = areaImages[area.id];
+        });
+
+        area.addEventListener('mouseleave', () => {
+            worldMap.src = 'img/nic.jpg';
+        });
     });
 });
